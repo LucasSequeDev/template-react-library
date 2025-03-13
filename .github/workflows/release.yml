@@ -21,10 +21,6 @@ jobs:
       - name: Instalar dependencias
         run: npm install
 
-      - name: Obtener la versión del package.json
-        id: package_version
-        run: echo "VERSION=$(node -p "require('./package.json').version")" >> $GITHUB_ENV
-
       - name: Construir el paquete
         run: npm run build
 
