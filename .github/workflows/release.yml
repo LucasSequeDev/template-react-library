@@ -19,7 +19,7 @@ jobs:
           always-auth: true
 
       - name: Instalar dependencias
-        run: npm install
+        run: npm ci
 
       - name: Construir el paquete
         run: npm run build
